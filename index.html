@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pedido - Pizzaria do Joao</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="style/fonts.css"/>
+</head>
+<body>
+    
+    <header>
+
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="container-box">
+                <div id="title-box">
+                     <h1>Choose your pizza!</h1>
+                </div>
+              
+               <div id="formulario">
+                   <form name="formOrder" method="POST" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+                   <table>
+                        <thead>
+                            <th>Flavor</th>
+                            <th>Size</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </thead>
+                        <tbody>
+                            <tr class="item">
+                                <td>Calabresa</td>
+                                <td><select name="size_pizza_Calabresa">
+                                    <option>P</option>
+                                    <option>M</option>
+                                    <option>G</option>
+                                </select></td>
+                                <td><a class="btn-rmv">-</a><input max="10" class="quantidade" value="0" type="number" name="q_calabresa"><a class="btn-add">+</a></td>
+                                <td class="price-item">10.00</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Frango</td>
+                                <td><select name="size_pizza_Frango">
+                                    <option>P</option>
+                                    <option>M</option>
+                                    <option>G</option>
+                                </select></td>
+                                <td><a class="btn-rmv">-</a><span><input max="10" class="quantidade" value="0" type="number" name="q_frango"></span> <a class="btn-add">+</a></td>
+                                <td class="price-item">11.99</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Portuguesa</td>
+                                <td><select name="size_pizza_Portuguesa">
+                                    <option>P</option>
+                                    <option>M</option>
+                                    <option>G</option>
+                                </select></td>
+                                <td><a class="btn-rmv">-</a><span><input max="10" class="quantidade" value="0" type="number" name="q_portuquesa"></span> <a class="btn-add">+</a></td>
+                                <td class="price-item">10.99</td>
+                            </tr>
+                            <tr class="item">
+                                <td>4 Queijos</td>
+                                <td><select name="size_pizza_4Queijos">
+                                    <option>P</option>
+                                    <option>M</option>
+                                    <option>G</option>
+                                </select></td>
+                                <td><a class="btn-rmv">-</a><span><input max="10" class="quantidade" value="0" type="number" name="q_4queijos"></span> <a class="btn-add">+</a></td>
+                                <td class="price-item">13.99</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Muzzarela</td>
+                                <td><select name="size_pizza_Muzzarelas">
+                                    <option>P</option>
+                                    <option>M</option>
+                                    <option>G</option>
+                                </select></td>
+                                <td><a class="btn-rmv">-</a><span><input max="10" class="quantidade" value="0" type="number" name="q_muzzarela"></span> <a class="btn-add">+</a></td>
+                                <td class="price-item">9.99</td>
+                            </tr>
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td id="coltotal-value" colspan="3">Total Value: </td>
+                                <td id="totalValue">0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button id="btn-submit" type="submit">Send Order</button>
+               </form>
+               </div>
+               
+
+            </div>
+            <div id="footer-box">
+                <p id="footer-text">&copy;all copyrights reserved - <a class="link" href="https://www.facebook.com/telepizzadojoao/">pizzaria do joão</a></p>
+            </div>
+             
+        </div>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

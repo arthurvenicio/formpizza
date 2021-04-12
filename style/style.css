@@ -1,0 +1,160 @@
+/* RESETANDO TODOS OS PARAMETROS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* MEXENDO OS ELEMENTS*/
+body{
+    background-color: red;
+}
+
+h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color:red;
+}
+
+form{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*MEXENDO COM AS DIVS*/
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container-box{
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+    height: 600px;
+    box-sizing: border-box;
+    margin: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+#title-box{
+    position: relative;
+    top: 20px;
+}
+
+#coltotal-value{
+    text-align: right;
+}
+
+#footer-box{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+#footer-text{
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/*MEXENDO COM AS CLASSES*/
+
+a.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+input.quantidade{
+    text-align: center;
+	border: none;
+	display: inline;
+	width: 30px;
+	padding: 5px 0px;
+	margin-left: 15px;
+}
+
+
+/* ESTILIZANDO AS TABELAS*/
+table {
+    /*border: 2px solid rgba(192, 191, 191, 0.438);*/
+    position: relative;
+    border-radius: 15px;
+    position: relative;
+    margin: 20px auto;
+    border-spacing: 10px
+}
+
+th {
+    height: 25px;
+  }
+
+td{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    /*border-right: 2px solid rgba(192, 191, 191, 0.438);*/
+    padding: 10px;
+}
+
+
+table thead{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+}
+
+/* ESTILIZANDO OS BOTOES*/
+#btn-submit{
+    border: 2px solid rgba(192, 191, 191, 0.6);
+    border-radius: 25px;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+#btn-submit:hover{
+    background-color:rgba(192, 191, 191, 0.6);
+}
+
+.btn-add{
+    border: 1.3px solid gray;
+    border-radius: 50%;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+.btn-add:hover{
+    background-color: rgba(192, 191, 191, 0.6);
+    color: #fff;
+}
+
+.btn-rmv{
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+.btn-rmv:hover{
+    background-color: rgba(192, 191, 191, 0.6);
+    color: #fff;
+}
+
+/* CRIAÇÃO DAS MEDIAQUERYS*/
+@media screen and (max-width:375px){
+    #container-box{
+        border-radius: 0px;
+        width: 100vw;
+        height: 100vh;
+    }
+ 
+}
